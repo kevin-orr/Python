@@ -40,7 +40,8 @@ def answer(x):
             x[first_index] += delta_to_add
             x[end_index] -= delta_to_add
             x = sorted(x)
-
+        
+        # I had to remove the IO line below when running against 'verify' - just left it in here for context
         print x
     #  finally use Counter to get the frequency of the most common element
     return Counter(x).most_common(1)[0][1]
@@ -52,32 +53,26 @@ if __name__ == "__main__":
     train_full_of_bunnies = [0, 0, 0, 4]
     # for the list above we expect to get back 4 as answer -> [1, 1, 1, 1]
     expected_answer = 4
-    maximal = answer(train_full_of_bunnies)
     assert expected_answer == answer(train_full_of_bunnies)
 
     train_full_of_bunnies = [1, 2, 3]
     expected_answer = 3
-    maximal = answer(train_full_of_bunnies)
     assert expected_answer == answer(train_full_of_bunnies)
 
     train_full_of_bunnies = [1, 4, 1]
     expected_answer = 3
-    maximal = answer(train_full_of_bunnies)
     assert expected_answer == answer(train_full_of_bunnies)
 
     train_full_of_bunnies = [1, 2, 2]
     expected_answer = 2
-    maximal = answer(train_full_of_bunnies)
     assert expected_answer == answer(train_full_of_bunnies)
 
     train_full_of_bunnies = [2, 3, 4, 1, 6, 3]
     expected_answer = 5
-    maximal = answer(train_full_of_bunnies)
     assert expected_answer == answer(train_full_of_bunnies)
 
     train_full_of_bunnies = [1, 0, 3, 3, 5, 10, 8, 12, 4, 15, 11, 2, 14, 5, 7, 13, 15, 5, 7, 10, 8, 12, 4, 15, 11, 2, 33, 5, 0, 44, 5, 7, 13, 15]
     expected_answer = 33
-    maximal = answer(train_full_of_bunnies)
     assert expected_answer == answer(train_full_of_bunnies)
 
 
