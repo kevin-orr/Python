@@ -23,8 +23,8 @@ def get_country_codes():
 
 if __name__ == '__main__':
     map = get_country_codes()
-    country = str(raw_input("Give me a bleeding country name will ye...>> "))
-    while country != "fuck off":
+    country = str(raw_input("Give me a country name will ye...>> "))
+    while country != "feck off":
         if country in map.keys():
             (name, code, iso, population, areaKm, gdp) = map[country.lower()]
             print("\nInfo for country {}"
@@ -34,6 +34,6 @@ if __name__ == '__main__':
                   "\n\tArea (KM)    : {}"
                   "\n\tGDP          : {}".format(name, code, population, iso, areaKm, gdp))
         else:
-            print("Hey, bell-end - I haven't a clue what {} is!".format(country))
-        country = str(raw_input("Want to go again then type in another bleeding country name or 'fuck off'...>> "))
+            print("Hey, bella - I haven't a clue what {} is!".format(country))
+        country = str(raw_input("Want to go again then type in another country name or 'feck off'...>> "))
 
