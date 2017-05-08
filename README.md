@@ -19,7 +19,7 @@ I read something, somewhere on the web about a guy who was trying to get a list 
 ...
 ```
 
-[country codes part 2](country_codes_2)
+[country codes part 2](country_code_2)
 
 So I decided to make a little util around the [country codes](country-codes). 
 
