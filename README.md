@@ -19,6 +19,11 @@ I read something, somewhere on the web about a guy who was trying to get a list 
 ...
 ```
 
+[country codes part 2](country-codes-2)
+
+So I decided to make a little util around the [country codes](country-codes). 
+
+
 [Random bits and bobs bucket](random-probs)
 
 Just a collection of my take on solutions to some problems I come across
